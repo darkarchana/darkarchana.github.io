@@ -1,0 +1,24 @@
+* {
+   padding: 0;
+   margin: 0;
+}
+
+body {
+   background: ##8c8c8c;
+   color: #3C3B3F;
+   font-family: helvetica, sans-serif;
+}
+
+ul li {
+ float: left;
+ list-style: none;
+ margin-right: 50px;
+}
+
+li a {
+ color: #544738;
+ text-decoration: none;
+ float: left;
+ font-size: 25px;
+ padding: 12px;
+}
