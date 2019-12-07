@@ -1,0 +1,26 @@
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background: rgba(117, 113, 113, 0.897);
+    color: rgba(255, 255, 255, 0.87);
+}
+
+ul {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+
+ul .link {
+    min-width: 15%;
+}
+
+.link {
+    text-decoration: none;
+    margin-right: 2%;
+    color: rgba(255, 255, 255, 0.87);
+}
