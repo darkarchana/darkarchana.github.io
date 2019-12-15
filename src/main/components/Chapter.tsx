@@ -14,15 +14,30 @@ function Chapter() {
     const [error, setError] = useState('');
     
     useEffect(() => {
-        axios.get('https://darkarchana-golang.herokuapp.com/', {
-            headers: { 'crossDomain': true },
+        axios({
+            method: 'get',
+            url: 'https://darkarchana-golang.herokuapp.com/chapter',
             data: {
                 "req": "findChapter",
                 "title": "blue_lock",
                 "chapter":{
                     "chapter": 1
                 }
+            },       
+            headers: { 
+                'crossDomain': true,
             }
+        //   }).get('https://darkarchana-golang.herokuapp.com/chapter', {
+        //     headers: { 
+        //         'crossDomain': true,
+        //     },
+        //     data: {
+        //         "req": "findChapter",
+        //         "title": "blue_lock",
+        //         "chapter":{
+        //             "chapter": 1
+        //         }
+        //     }
         })
         .then(res => {
             console.log(res.data)
