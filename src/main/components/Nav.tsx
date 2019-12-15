@@ -12,6 +12,9 @@ function Nav() {
         <Link className="link" to="/test">
           <li>Test</li>
         </Link>
+        <Link className="link" to="/chapter">
+          <li>Chapter</li>
+        </Link>
         <Link className="link" to="/about">
           <li>About</li>
         </Link>
