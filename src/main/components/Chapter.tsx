@@ -16,28 +16,7 @@ function Chapter() {
     useEffect(() => {
         axios({
             method: 'get',
-            url: 'https://darkarchana-golang.herokuapp.com/chapter',
-            data: {
-                "req": "findChapter",
-                "title": "blue_lock",
-                "chapter":{
-                    "chapter": 1
-                }
-            },       
-            headers: { 
-                'crossDomain': true,
-            }
-        //   }).get('https://darkarchana-golang.herokuapp.com/chapter', {
-        //     headers: { 
-        //         'crossDomain': true,
-        //     },
-        //     data: {
-        //         "req": "findChapter",
-        //         "title": "blue_lock",
-        //         "chapter":{
-        //             "chapter": 1
-        //         }
-        //     }
+            url: 'https://darkarchana-backend.appspot.com/chapter?req=findChapter&title=blue_lock&chapter=1',      
         })
         .then(res => {
             console.log(res.data)
